@@ -1,0 +1,20 @@
+AGENDA LEVELUP 2.0 - DEV-C++
+
+Este projeto utiliza linguagem C, nao C++.
+
+1. Extraia todos os arquivos na mesma pasta.
+2. Abra o Dev-C++.
+3. Escolha Arquivo > Novo > Projeto.
+4. Crie um Console Application em linguagem C.
+5. Adicione main.c e agenda.c ao projeto.
+6. Mantenha agenda.h na mesma pasta.
+7. Compile e execute o projeto inteiro.
+
+Se aparecer undefined reference, confira se agenda.c foi adicionado ao projeto.
+O arquivo contatos.txt sera criado na pasta de execucao.
+
+Arquivos:
+- main.c: menu e coordenacao.
+- agenda.c: operacoes e regras.
+- agenda.h: estrutura e prototipos.
+- contatos-exemplo.txt: base opcional para testes.

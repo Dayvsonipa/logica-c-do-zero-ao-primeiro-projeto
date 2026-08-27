@@ -1,0 +1,38 @@
+AGENDA LEVELUP - ROTEIRO DE TESTES
+
+Para cada caso, anote: entrada, resultado esperado, resultado obtido e situacao.
+
+01. AGENDA VAZIA
+- Listar, pesquisar, atualizar, excluir e criar backup sem contatos.txt.
+
+02. CADASTRO
+- Cadastrar IDs 1, 2 e 3.
+- Tentar ID negativo, zero e repetido.
+- Tentar nome vazio e nome com ponto e virgula.
+
+03. PERSISTENCIA
+- Fechar o programa, executar novamente e listar os mesmos contatos.
+
+04. PESQUISA
+- Pesquisar o primeiro, o ultimo e um ID inexistente.
+
+05. ATUALIZACAO
+- Atualizar primeiro, meio e ultimo registro.
+- Tentar atualizar ID inexistente.
+- Conferir contatos.txt depois de cada operacao.
+
+06. EXCLUSAO
+- Excluir primeiro, meio, ultimo e ID inexistente.
+- Excluir quando existir apenas um contato.
+
+07. ENTRADAS INVALIDAS
+- Digitar letras e numeros misturados no menu e nos IDs.
+
+08. BACKUP E DIAGNOSTICO
+- Criar backup e comparar com contatos.txt.
+- Inserir temporariamente uma linha invalida e executar o diagnostico.
+
+09. ENTREGA
+- Compilar sem erros.
+- Demonstrar o fluxo CRUD completo.
+- Explicar onde o arquivo contatos.txt foi criado.
