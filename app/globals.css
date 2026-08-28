@@ -272,6 +272,14 @@ ul.exercise-list { list-style: disc; }
 .reveal-content { display: grid; gap: .75rem; padding: 1rem; }
 .reveal-content .code-block { margin: 0; }
 
+/* Blocos escuros mantêm o texto legível mesmo dentro de .lesson-copy. */
+.lesson-copy .pseudo-block code,
+.lesson-copy .code-block pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
 .sequence-lane { display: grid; gap: .35rem; max-width: 34rem; margin: 1.25rem auto; }
 .sequence-lane > div { display: grid; grid-template-columns: 2.2rem 1fr; align-items: center; gap: .75rem; position: relative; }
 .sequence-lane > div > span { display: inline-flex; width: 2.1rem; height: 2.1rem; align-items: center; justify-content: center; border-radius: 999px; background: var(--accent); color: var(--accent-strong); font-weight: 900; }
