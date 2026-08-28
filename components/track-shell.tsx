@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Braces, Home } from "lucide-react";
+import { ArrowLeft, ArrowRight, Home } from "lucide-react";
 
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
@@ -65,9 +65,12 @@ export function TrackShell({ track, previous, next, children }: TrackShellProps)
     <SidebarProvider style={{ "--sidebar-width": "18rem" } as React.CSSProperties}>
       <Sidebar collapsible="offcanvas" className="border-r border-sidebar-border">
         <SidebarHeader className="border-b border-sidebar-border p-4">
-          <Link href="/" className="flex items-center gap-3 font-bold">
-            <span className="logo-mark"><Braces /></span>
-            <span>Lógica <span className="text-accent-strong">&amp; C</span></span>
+          <Link href="/" className="site-brand sidebar-brand" aria-label="Página inicial do Professor Dayvson">
+            <span className="brand-mark" aria-hidden="true">D</span>
+            <span className="brand-copy">
+              <strong className="brand-title">Professor Dayvson</strong>
+              <small className="brand-subtitle">Central de Aulas</small>
+            </span>
           </Link>
         </SidebarHeader>
         <SidebarContent>
@@ -107,7 +110,7 @@ export function TrackShell({ track, previous, next, children }: TrackShellProps)
           <div className="flex min-w-0 items-center gap-3">
             <SidebarTrigger className="size-9" />
             <div className="min-w-0">
-              <p className="text-[10px] font-black tracking-[.16em] text-accent-strong">TRILHA {track.number}</p>
+              <p className="text-[10px] font-black tracking-[.14em] text-accent-strong">PROF. DAYVSON · TRILHA {track.number}</p>
               <p className="truncate text-sm font-bold">{track.title}</p>
             </div>
           </div>
